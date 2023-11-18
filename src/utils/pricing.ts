@@ -4,8 +4,8 @@ import { Bundle, Pool, Token } from './../types/schema'
 import { BigDecimal, BigInt } from '@graphprotocol/graph-ts'
 import { exponentToBigDecimal, safeDiv } from '../utils/index'
 
-const WETH_ADDRESS = '0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2'
-const USDC_WETH_03_POOL = '0x8ad599c3a0ff1de082011efddc58f1908eb6e6d8'
+const WETH_ADDRESS = '0x1d7a42e67f9c5592d1927a7b47e32ae809561fe0'
+const USDC_WETH_03_POOL = '0xc8b8d86996aab4fc79c1630e2d2c7e7e7e5c583f'
 
 // token where amounts should contribute to tracked volume and liquidity
 // usually tokens that many tokens are paired with s
@@ -13,7 +13,7 @@ export let WHITELIST_TOKENS: string[] = [
   WETH_ADDRESS, // WETH
   '0x6b175474e89094c44da98b954eedeac495271d0f', // DAI
   '0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48', // USDC
-  '0xdac17f958d2ee523a2206206994597c13d831ec7', // USDT
+  '0x6b5e1bf0fa6543e594b6ba491f646a698e6962d4', // USDT
   '0x0000000000085d4780b73119b644ae5ecd22b376', // TUSD
   '0x2260fac5e5542a773aa44fbcfedf7c193bc2c599', // WBTC
   '0x5d3a536e4d6dbd6114cc1ead35777bab948e3643', // cDAI
@@ -36,7 +36,7 @@ export let WHITELIST_TOKENS: string[] = [
 let STABLE_COINS: string[] = [
   '0x6b175474e89094c44da98b954eedeac495271d0f',
   '0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48',
-  '0xdac17f958d2ee523a2206206994597c13d831ec7',
+  '0x6b5e1bf0fa6543e594b6ba491f646a698e6962d4',
   '0x0000000000085d4780b73119b644ae5ecd22b376',
   '0x956f47f50a910163d8bf957cf5846d573e7f87ca',
   '0x4dd28568d05f09b02220b09c2cb307bfd837cb95'
